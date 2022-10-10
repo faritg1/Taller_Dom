@@ -5,7 +5,7 @@ cambiarcolor.addEventListener("change",()=>{
 
     let select = document.getElementById("select1");
 
-    /* Con el select evaluamos su respectiva posicion, referencia y color. */
+    /* Evaluamos su respectiva posicion, referencia y color. */
 
     document.getElementById("texto_1").value = select.selectedIndex;
     document.getElementById("texto_2").value = select.options[select.selectedIndex].text
@@ -27,14 +27,17 @@ const fncontrolarcaracteres = ()=>{
 
     if(tamTxterea.value.length <= 0)
     {
+        /* Si el campo de texto es vacio, mostrara un alerta */
         alert("Campo de texto vacio");
     }
     else if (tamTxterea.value.length > 50)
     {
+        /* Campo tendra una capacidad maxima de 50 caracteres */
         alert("Texto maximo de 50max");
     }
     else
     {
+        /* Se evalua su valor del campo, al estar en un rango >0 & <50 */
         alert("tamaño de texto correcto")
     }
 }
@@ -45,6 +48,7 @@ btn.addEventListener("click", fncontrolarcaracteres);
 
 /////ejercicio 3
 //Deficion de variables y requerimientos
+/* Tendra unos parametros que indican en las variables */
 let patronletra = /^[a-zA-Z]/;
 let patronvocal = /[aeiouAEIOUáéíóú]/
 let texto1 = "--> texto contiene letra y contiene una vocal"
@@ -56,10 +60,12 @@ function validarletras(){
 
     if(patronletra.test(palabra) && patronvocal.test(palabra))
     {
+        /* Evalua si contiene algun parametro dado, si es asi su valor es true */
         document.getElementById("rtaregular").innerHTML = texto1;
     }
     else
     {
+        /* Sino, su valor sera false */
         document.getElementById("rtaregular").innerHTML = texto2;
     }
 }
@@ -69,6 +75,7 @@ btn2.addEventListener("click",validarletras)
 
 ////ejercicio 3.1
 //Deficion de variables y requerimientos
+/* Tendra unos parametros que indican en las variables */
 let patronletra2 = /^[a-zA-Z0-9]*$/;
 let patronnumeros = /[0-9]{1}/
 let texto3 = "--> Correcto"
@@ -92,6 +99,7 @@ let btn3 = document.getElementById("btnregular2")
 btn3.addEventListener("click",validarcajatexto)
 
 ////ejercicio 3.2
+/* Tendra unos parametros que indican en las variables */
 //^607 su prioridad es comenzar con el valor indicado
 let numeros = /^607[0-9]{7}/;
 let texto5 = "--> Correcto"
@@ -115,9 +123,9 @@ btn4.addEventListener("click", validarnumeros)
 
 
 ///Ejercicio 4
-
 let texto = document.getElementById("text")
 texto.addEventListener("input", ()=>{
+    /* Su valor se mostrar en un id, con una etiqueta (p) */
     document.getElementById("rtateclado").innerHTML = texto.value
 })
 
