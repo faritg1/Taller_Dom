@@ -1,0 +1,98 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* ejercicio 1 */
+
+/* Centrar todos los form y sus espacios */
+form{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    gap: 5px;
+    padding: 10px;
+}
+input{
+    text-align: center;
+}
+
+/* ejercicio 2 */
+
+/* Cuando es valido(verde) invalido(rojo) */
+textarea:valid {border-color:green }
+textarea:invalid{border-color: red}
+
+@keyframes shake{
+    0%, 100% {transform: translateX(0);}
+    25% {transform: translateX(8px);}
+    75% {transform: translateX(-8px);}
+}
+
+/* Movimiento para el textarea */
+textarea:invalid{animation: shake 0.162s 0s 3;}
+
+/* ejercicio 3 */
+
+/* Ejercicio 5 */
+.img_1{
+    display: flex;
+    margin: auto;
+    justify-content: center;
+    align-items: center;
+    height: 450px;
+    width: 450px;
+    background-color: rgba(227, 120, 13, 0.58);
+    padding: 10px;
+    border-radius: 20px;   
+}
+
+.img_2{
+    display: flex;
+    margin-top: 10px;
+    justify-content: center;
+    gap: 43px;
+}
+
+
+
+/* Ejercicio 6 */
+
+.contenedor_button{
+    display: flex;
+    justify-content: center;
+    gap: 8px;
+}
+
+#copia{
+    text-align: center;
+}
+
+/* /* Ejercicio 7 */
+/* 
+.h4{
+    text-align: center;
+}
+li{
+    list-style: none;
+}
+
+#elementos{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+} */ 
+
+
+
+
+
+
+
+
+
+

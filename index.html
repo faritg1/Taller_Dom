@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Talento coex -- Carlos Torres">
+    <meta name="description" content="Diseño web">
+    <meta name="keywords" content="Aprende lógica">
+
+    <!-- Importar booststrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+
+    <!-- IMPORTAR CSS -->
+    <link rel="stylesheet" href="./style.css">
+
+    <!-- IMPORTAR ICONO -->
+    <link rel="icon" type="imge/png" sizes="32x32" href="https://img2.freepng.es/20180716/gyy/kisspng-javascript-computer-icons-software-developer-casca-javascript-logo-5b4ca5d6055ec0.625573901531749846022.jpg">
+
+    <!-- TITULO DE LA PAGINA -->
+    <title>Ejercicios_DOM</title>
+</head>
+<body>
+
+    <header>
+    </header>
+
+
+    <main>
+        <!-- ejercicio_1 -->
+        <section>
+            <h1>Ejercicio 1</h1>
+            <form action="">
+            
+            <!-- Validamos la referencia del los colores -->
+            <select name="" id="select1">
+                <option value="FF0000">Red</option>
+                <option value="00FFF7">Blue</option>
+                <option value="1FFF00">Green</option>
+                <option value="F0FF00">Yellow</option>
+                <option value="FF9B00">Orange</option>
+            </select>
+
+                <!-- Su respectiva descripcion, y valores registrados -->
+
+                <label for="">Number index selected</label>
+                <input type="number" id="texto_1">
+    
+                <label for="">text selected</label>
+                <input type="text" id="texto_2">
+    
+    
+                <label for="">Color Value selected</label>
+                <input type="text" id="texto_3">
+    
+                <input type="color" id="valuecolor" >
+        
+            </form>
+        </section>
+
+        <!-- ejercicio_2 -->
+        <section>
+
+            <h1>Ejercicio 2 - textare</h1>
+
+            
+            <form action="">
+
+                <label for="des">Descripcion</label>
+                <!-- control textare -->
+                <textarea name="" id="des" cols="100" rows="5" required></textarea>
+                <!-- btn validar -->
+                <input type="button" value="Validar" id="btn">
+
+            </form>
+
+        </section>
+
+        <!-- ejercicio_3 -->
+        <section>
+
+            <h1>Ejecicio 3</h1>
+
+            <form action="">
+
+                <p>EXPRESIONES REGULARES</p>
+
+                <!-- Su respectiva descripcion, y valores registrados -->
+        
+                <label for="txtcar">Ejemplo Expresion regular: Letra+Vocal</label>
+                <input type="text" id="txtcar" placeholder="ingresar texto">
+                <p id="rtaregular"></p>
+                <input type="button" id="btnregular" value="Validar">
+
+                <br>
+
+                <label for="txtreg">Ejemplo Expresion regular: Letra+Vocal+Numero+Longitud</label>
+                <input type="text" id="txtreg" placeholder="ingresar texto">
+                <p id="rtaregular2"></p>
+                <input type="button" id="btnregular2" value="Validar">
+
+                <br>
+
+                <label for="txtnum">Ejemplo Expresion regular: Numeros </label>
+                <input type="number" id="txtnum" placeholder="ingresar Numeros">
+                <p id="rtanum"></p>
+                <input type="button" id="btnnum" value="Validar">
+
+            </form>
+
+        </section>
+
+        <!-- Ejercicio 4 -->
+        <section>
+
+            <h1>Ejercicio 4</h1>
+
+            <h5>Eventos del teclado</h5>
+
+            <form action="">
+
+                <!-- Su respectiva descripcion, y valores registrados -->
+
+                <label for="text">Ingresar texto</label>
+                <input type="text" id="text">
+                <p id="rtateclado"></p> 
+
+                <label for="txt">Evento keyup ingrese un texto (max 50 caracteres)</label>
+                <input type="text" id="tamtext"  maxlength="50">
+                <p>Cantidad de caracteres disponibles: <span id="cantidad" style="color:red;">50</span></p>
+
+            </form>
+        </section>
+
+        <!-- Ejercicio 5 -->
+
+        <section>
+
+            <h1>Ejercicio 5</h1>
+            <h5>Manipulacion de imagenes</h5>
+
+            <!-- Cada imagen es importada con una -->
+
+            <div class="contenedor">
+
+                <div class="img_1">
+                    <img  src="https://mundowebcity.com/wp-content/uploads/2020/10/LOGO-AMD.fw_-1-400x400.png" width="400px" height="400px" id="pantalla" alt="">
+                </div>
+
+                <div class="img_2 miniaturas">
+
+                    <img  onclick="muestra(1)" id="img1" src="https://www.pngplay.com/wp-content/uploads/12/CPU-Transparent-Images.png" name="primera" width="80px" height="80px" alt="">
+
+                    <img onclick="muestra(2)" id="img2" src="https://images.vexels.com/media/users/3/140673/isolated/lists/68ff7023a9804bb6e5e12d53f6044c4c-icono-de-dibujos-animados-de-laptop.png"  width="80px" height="80px" alt="">
+
+                    <img  onclick="muestra(3)" id="img3" src="https://rcdn.rolloid.net/uploads/2017/07/asi-era-lo-ultimo-en-tecnologia-hace-20-anos-en-1997-1501490496.png"  width="80px" height="80px" alt="">
+
+                    <img  onclick="muestra(4)" id="img4" src="https://images.samsung.com/is/image/samsung/mx-ur55-lu28r550uqlxzx-lperspectiveblack-thumb-248668632?$480_480_PNG$"  width="80px" height="80px" alt="">
+
+                </div>
+
+            </div>
+
+        </section>
+
+        <section>
+            <h1>Ejercicio 6</h1>
+            <h5>Creacion de nodos</h5>
+
+                <div class="contenedor_button">
+
+                    <input type="button" value="Crear" id="btncrear">
+
+                    <input type="button" value="Duplicar" id="btnduplicar">
+
+                    <input type="button" value="Eliminar" id="btneliminar">
+
+                </div>
+                <div id="copia">
+                    <p id="nuevotexto"></p>
+                </div>
+        </section>
+
+        <section>
+            <h1>Ejercicio 7</h1>
+            <h5>Crear lista de elementos</h5>
+
+            <div class="container" >
+                <div class="principal" class="card card-body col-sm-12">
+                    <h4 class="title fs-2">Agregar Elementos</h4>
+                    <form id="frmlista" class="form col-auto mb-3">
+                        <input type="text" id="txtelemento"  class="form-control" placeholder="Escribir Elemento">
+                        <input type="submit" value="Agregar" class="btn btn-light btn-outline-primary">
+                    </form>
+
+                    <h4 class="h4">Elemetos:</h4>
+
+                    <ul id="elementos" class="list-group">
+
+                        <li class="list-group-item">Elemento 1 
+                            <button class="btn btn-light btn-outline-danger btn-sm float-end delete" class="delete">X</button>
+                        </li>
+
+                        <li class="list-group-item">Elemento 2 
+                            <button class="btn btn-light btn-outline-danger btn-sm float-end delete" class="delete">X</button>
+                        </li>
+
+                        <li class="list-group-item">Elemento 3 
+                            <button class="btn btn-light btn-outline-danger btn-sm float-end delete" class="delete">X</button>
+                        </li>
+
+                        <li class="list-group-item">Elemento 4 
+                            <button class="btn btn-light btn-outline-danger btn-sm float-end delete" class="delete">X</button>
+                        </li>
+
+                    </ul>
+
+
+                </div>
+            </div>
+
+        </section>
+        
+    </main>
+
+    <footer>
+        <details>
+            <p>talento coex----Carlos Torres</p>
+        </details>
+    </footer>
+
+    <script src="./main.js"></script>
+    
+</body>
+</html>
+
